@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  <title>Frontend Mentor | Todo app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+    </style>
+    <script defer src="script1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="head">
+        <div><p style="color: white;">T O D O</p></div> <div class="alignsun"><img src="images/icon-moon.svg" alt="" class="sun" id="sun"></div>
+    </div>
+    
+    <div class="inputField">
+      <!-- onclick="addLI()" -->
+      <button >set</button>
+      <input type="text" id="input-set" placeholder="Create a new todo..." name="todo">
+    </div>
+  
+    <div class="checkbox">
+        <div class="inputField">
+            <ul class="todoList" id="list" style="color: hsl(234, 39%, 85%);">
+              <li>sfsf</li>
+              <li>html</li>
+              <li>css</li>
+              <!-- <button></button>           -->
+            </ul>
+          <!-- <button id="btn-get"> </button> -->
+          <div class="footer">
+           <div><span><span class="pendingTasks"></span> Items left</span></div>    
+            <div class="innerflex"><button>All</button>
+              <button>Active</button>
+              <button onclick="deleteTask">Completed</button>
+              </div>             
+                <button class="clear">Clear Completed</button>
+          </div>  
+
+        </div> 
+        
+            
+    </div>
+    <div class="outerflex"><button>All</button>
+      <button>Active</button>
+      <button onclick="deleteTask">Completed</button>
+      </div>
+
+</div>
+    
+    
+
+  <!-- Add dynamic number items left -->
+
+  <!-- All
+  Active 
+  Completed
+
+  Clear Completed
+
+  Drag and drop to reorder list -->
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
