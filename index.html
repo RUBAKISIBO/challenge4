@@ -22,27 +22,25 @@
 <body>
 <div class="main">
     <div class="head">
-        <div><p style="color: white;">T O D O</p></div> <div class="alignsun"><img src="images/icon-moon.svg" alt="" class="sun" id="sun"></div>
+        <div><p style="color: white;">T O D O</p></div> <div class="alignsun"><img src="images/icon-moon.svg" alt="" class="moon" id="sun"> <img src="images/icon-sun.svg" alt="" class="sun" id="moon"></div>
     </div>
     
     <div class="inputField">
       <!-- onclick="addLI()" -->
-      <button >set</button>
+      <button ></button>
       <input type="text" id="input-set" placeholder="Create a new todo..." name="todo">
     </div>
   
     <div class="checkbox">
         <div class="inputField">
             <ul class="todoList" id="list" style="color: hsl(234, 39%, 85%);">
-              <li>sfsf</li>
-              <li>html</li>
-              <li>css</li>
+              
               <!-- <button></button>           -->
             </ul>
           <!-- <button id="btn-get"> </button> -->
           <div class="footer">
            <div><span><span class="pendingTasks"></span> Items left</span></div>    
-            <div class="innerflex"><button>All</button>
+            <div class="innerflex" onclick="showTasks()"><button>All</button>
               <button>Active</button>
               <button onclick="deleteTask">Completed</button>
               </div>             

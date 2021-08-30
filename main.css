@@ -31,6 +31,8 @@ p{
     
 }
 
+
+
 .main{
     width: 50%;
     margin:auto;
@@ -42,6 +44,20 @@ p{
     flex-direction: row;
     align-items:center;
     padding-top: 20px;
+}
+
+ .sun{
+    display: none;
+}
+
+
+
+body.dark .sun{
+    display: block;
+}
+
+body.dark .moon{
+    display: none;
 }
 
 .alignsun{
@@ -56,6 +72,16 @@ p{
     background-color: hsl(235, 24%, 19%);
     border-radius: 5px;
     text-align: justify; 
+}
+
+.inputField button{
+    padding: 10px;
+    border-color: hsl(234, 11%, 52%);
+    background-color:transparent;
+    border-style:groove;
+    border-radius: 360px;
+    /* border:transparent; */
+    /* border-left-color: tomato; */
 }
 
 
@@ -97,8 +123,19 @@ div input{
 .checkbox li{
     padding: 10px;
     border-bottom-style:groove;
-    border-bottom: re;
+    /* width: 99%; */
+    /* justify-content: flex-start; */
 }
+
+/* .checkbox .inputField ul li.checked {
+    color: #fff;
+    text-decoration: line-through;
+  } */
+
+  .complete{
+    color: #fff;
+    text-decoration: line-through;
+  }
 
 .footer{
     display: flex;

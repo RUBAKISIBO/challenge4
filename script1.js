@@ -3,11 +3,24 @@ const addBtn = document.querySelector(".inputField button");
 const todoList = document.querySelector(".todoList");
 const deleteAllBtn = document.querySelector(".clear");
 const sun = document.getElementById('sun');
+const moon = document.getElementById('moon');
+
+moon.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+  
+  });
 
 sun.addEventListener('click', () => {
 document.body.classList.toggle('dark');
 
 });
+
+let list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
 
 inputBox.onkeyup = ()=>{
     let userEnteredValue = inputBox.value; //getting user entered value
@@ -52,7 +65,7 @@ inputBox.onkeyup = ()=>{
     }
     let newLiTag = "";
     listArray.forEach((element, index) => {
-      newLiTag += `<li>${element}<span class="icon" onclick="deleteTask(${index})"><i class="fas fa-trash"></i></span></li>`;
+      newLiTag += `<li><button></button>${element}<span class="icon" onclick="deleteTask(${index})"><i class="fas fa-trash"></i></span></li>`;
     });
     todoList.innerHTML = newLiTag; //adding new li tag inside ul tag
     inputBox.value = ""; //once task added leave the input field blank
@@ -73,8 +86,14 @@ function deleteTask(index){
     showTasks(); //call the showTasks function
   }
 
-  function changeimg() {
-      let sun = document.getElementById('sun');
-     let img;
-  }
+  function clearCompleted()
+    {
+
+    $("#todo-list .toggle:checked").parent().remove();
+
+    }
+
+  
+
+  
 
